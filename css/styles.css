@@ -21,15 +21,15 @@ body {
     background-position: top right -150px, bottom left;
     background-repeat: no-repeat, no-repeat;
     background-size: contain, contain;
-
+}
+.container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    flex-direction: column;
     gap: 4rem;
     padding: 4rem 1.5rem;
+    align-items: center;
 }
-
 .pricing > h1 {
     color: var(--DarkGrayishBlue);
     margin-bottom: 2rem;
@@ -175,19 +175,23 @@ body {
 
 @media screen and (min-width: 600px) {
     body {
-        padding: 4rem 10rem;
         height: 100vh;
         background-size: 40%, 40%;
         align-items: center;
+        justify-content: center;
     }
+ 
     .main {
         flex-direction: row;
         gap: 0;
         min-height: 1px;
         align-items: center;
+        justify-content: center;
         min-height:200px;
     }
-  
+    .card {
+        width:max-content;
+    }
     .card.blue {
         padding: 4rem 2rem
     }
